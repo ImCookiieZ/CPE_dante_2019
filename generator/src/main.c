@@ -30,9 +30,9 @@ coord_t *create_co(void)
 void my_error(int ac, char **av)
 {
     if (!(my_str_isnum(av[1]) && my_getnbr(av[1]) >= 1))
-        my_error_exit("first argument is not a number\n");
+        my_error_exit("first argument is not a positive number\n");
     if (!(my_str_isnum(av[2]) && my_getnbr(av[2]) >= 1))
-        my_error_exit("secund argument is not a number\n");
+        my_error_exit("secund argument is not a positive number\n");
 }
 
 int main(int ac, char **av)
